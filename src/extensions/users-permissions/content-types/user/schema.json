@@ -65,12 +65,6 @@
       "target": "plugin::users-permissions.role",
       "inversedBy": "users",
       "configurable": false
-    },
-    "user": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::store.store",
-      "inversedBy": "stores"
     }
   }
 }

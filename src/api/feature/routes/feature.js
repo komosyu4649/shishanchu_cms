@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * store router
+ * feature router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::store.store');
+module.exports = createCoreRouter('api::feature.feature');
