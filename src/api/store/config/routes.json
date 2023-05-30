@@ -1,0 +1,26 @@
+[
+  {
+    "method": "GET",
+    "path": "/stores/:id",
+    "handler": "store.findOne",
+    "config": {
+      "policies": ["global::isAuthenticated", "api::store.isRelatedUser"]
+    }
+  },
+  {
+    "method": "PUT",
+    "path": "/stores/:id",
+    "handler": "store.update",
+    "config": {
+      "policies": ["global::isAuthenticated", "api::store.isRelatedUser"]
+    }
+  },
+  {
+    "method": "DELETE",
+    "path": "/stores/:id",
+    "handler": "store.delete",
+    "config": {
+      "policies": ["global::isAuthenticated", "api::store.isRelatedUser"]
+    }
+  }
+]
